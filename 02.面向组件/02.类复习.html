@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    // 创建类
+    class Person {
+        // 构造器方法
+        constructor(name,age) {
+            this.name = name
+            this.age = age
+        }
+
+        // 一般方法
+        speak(){
+            console.log(`我叫${this.name}，我今年${this.age}岁`)
+        }
+    }
+
+    class Student extends Person{
+        constructor(name,age,clazz) {
+            super(name,age); // 调用父类构造方法
+            this.clazz = clazz // 自己的属性
+        }
+
+        speak(){ // 重写父类方法
+            console.log(`我叫${this.name}，我今年${this.age}岁，我在${this.clazz}`)
+        }
+    }
+
+    const p1 = new Person('aca', 18)
+    const p2 = new Person('Oka', 19)
+
+    const s1 = new Student('s_aca',20,'java1班')
+
+</script>
+</body>
+</html>

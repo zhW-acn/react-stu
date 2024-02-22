@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--容器-->
+<div id="test"></div>
+
+<!--react-->
+<script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+<!--react—dom-->
+<script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+<!--babel-->
+<script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+
+<!--jsx-->
+<script type="text/babel">
+    // 创建虚拟dom
+    const vdom = <h1>hello,react</h1>
+    // 渲染虚拟dom到页面
+    ReactDOM.render(vdom,document.getElementById('test'))
+</script>
+</body>
+</html>

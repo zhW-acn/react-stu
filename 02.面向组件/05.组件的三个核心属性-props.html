@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdn.staticfile.org/prop-types/15.8.1/prop-types.min.js"></script>
+</head>
+<body>
+
+<div id="aca"></div>
+<div id="aka"></div>
+<div id="acac"></div>
+
+<script type="text/babel">
+    class Person extends React.Component {
+        static propTypes = {
+            name: PropTypes.string.isRequired, // String类型，必需的
+            age: PropTypes.number
+        }
+        render() {
+            /*
+            return (
+                <ul>
+                    <li>{this.props.name}</li>
+                    <li>{this.props.age}</li>
+                </ul>
+            )
+            */
+
+            // 解构赋值
+            const {name, age} = this.props // 不可修改props里的值，只读
+            return (
+                <ul>
+                    <li>{name}</li>
+                    <li>{age + 1}</li>
+                </ul>
+            )
+        }
+    }
+    //
+    // // 限制属性类型
+    // Person.propTypes = {
+    //     name: PropTypes.string.isRequired, // String类型，必需的
+    //     age: PropTypes.number
+    // }
+    // // 默认属性值
+    // Person.defaultProps = {}
+
+    // 方式1：写死参数
+    ReactDOM.render(<Person name="11" age="18"/>, document.getElementById('aca'))
+    // 方式2：传参
+    const aka = {name: "aka", age: 19}
+    ReactDOM.render(<Person name={aka.name} age={aka.age}/>, document.getElementById('aka'))
+    // 方式3：使用不定参数
+    const acac = {name: "acac", age: 20}
+    ReactDOM.render(<Person {...acac}/>, document.getElementById('acac'))
+</script>
+</body>
+</html>

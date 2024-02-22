@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+
+<div id="aca"></div>
+
+<script type="text/babel">
+    // 创建类组件
+    class MyComponent extends React.Component {
+        render() {
+            return (
+                    <h1>
+                        我是类定义的组件
+                    </h1>
+            )
+        }
+    }
+
+    // 渲染
+    ReactDOM.render(<MyComponent/>, document.getElementById('aca'))
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+
+<div id="aca"></div>
+
+<script type="text/babel">
+    class Demo extends React.Component {
+
+        myRef = React.createRef() // 也可以使用createRef，但只能存一个ref
+        showData = () => {
+            // 已弃用
+            console.log(this.refs.i1.value)
+        }
+        showData2 = () => {
+            const {i2} = this
+            console.log(i2.value)
+        }
+
+        render() {
+            return (
+                <div>
+                    <input ref="i1" type="text"/>已弃用的string的ref
+                    <button onClick={this.showData}>点击展示左侧输入框内容</button>
+                    <input ref={currentNode => this.i2 = currentNode} onBlur={this.showData2} type="text"/>使用箭头函数
+                </div>
+            )
+        }
+    }
+
+    ReactDOM.render(<Demo/>, document.getElementById('aca'))
+</script>
+</body>
+</html>

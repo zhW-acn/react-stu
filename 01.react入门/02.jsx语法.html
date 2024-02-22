@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .title {
+            background-color: aqua;
+        }
+    </style>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+
+<div id="test"></div>
+
+<div id="demo"></div>
+<!--jsx语法规则
+    1.定义虚拟DOM时不是string
+    2.标签中混入js表达式时加{}，{}内不能写js代码
+    3.样式类名试用className
+    4.内联样式要用 style={{ , }}
+    5.虚拟DOM只有一个根标签
+    6.标签必须闭合
+    7.标签首字母
+        (1).小写：html元素，没有则报错
+        (2).大写：React渲染对应组件，组件未定义则报错
+-->
+<script type="text/babel">
+
+    const myId = 'aca'
+    const myData = '我是aca'
+    const vdom = (
+        <h2 className="title" id={myId}>
+            <span style={{color: "white", fontSize: "50px"}}>{myData}</span>
+        </h2>
+    )
+    ReactDOM.render(
+        vdom, document.getElementById('test')
+    )
+
+
+    const data = ['aca', 'aka', 'あか']
+    const vdom2 = (
+        <div>
+            <h1>我是</h1>
+            <ul>
+                {// 遍历时列表都应有一个唯一值key
+                    data.map((item, index) => {
+                        return <li key={index}>{item}</li>
+                    })
+                }
+            </ul>
+        </div>
+    )
+    ReactDOM.render(
+        vdom2, document.getElementById('demo')
+    )
+</script>
+</body>
+</html>
