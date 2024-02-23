@@ -5,27 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e97cf2d-143d-460e-ae3b-4b4768051960" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Item/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Item/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/List/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/List/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/04.hello_react/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hello/Hello.css" beforeDir="false" afterPath="$PROJECT_DIR$/04.hello_react/components/Hello/Hello.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hello/Hello.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/04.hello_react/components/Hello/Hello.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/imaca/Aca.css" beforeDir="false" afterPath="$PROJECT_DIR$/04.hello_react/components/imaca/Aca.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/imaca/Aca.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/04.hello_react/components/imaca/Aca.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/04.hello_react/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Item/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Item/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/List/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708606278217</updated>
       <workItem from="1708606279333" duration="1310000" />
-      <workItem from="1708647139771" duration="7807000" />
+      <workItem from="1708647139771" duration="18524000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -126,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708606861944</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <option name="closed" value="true" />
+      <created>1708656381753</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708656381753</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
