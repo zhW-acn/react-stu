@@ -1,80 +1,54 @@
-import React, {Component} from "react";
-import Header from "./components/Header";
-import List from "./components/List";
-import Footer from "./components/Footer";
-import './App.css'
+import React, {Component} from 'react';
+import axios from 'axios'
 
-export default class App extends Component {
-    // 初始化状态
-    state = {
-        todos: [
-            {id: '001', name: '吃饭', done: true},
-            {id: '002', name: '睡觉', done: true},
-            {id: '003', name: '敲代码', done: false}
-        ]
-    }
+class App extends Component {
 
-    // 子组件与父组件通信
-    // 父组件通过props传递函数，子组件调用props中的函数以传递
+    state = {stuData: ""}
 
-    // 添加TODO
-    addTodo = (todoObj) => {
-        // 获取原todos
-        const {todos} = this.state
-        // 追加一个todo
-        const newTodos = [todoObj, ...todos]
-        // 更新状态
-        this.setState({todos: newTodos})
-    }
+    getStudentData = () => {
+        // 发送get请求
 
-    // 更新TODO
-    updateTodo = (id, done) => {
-        const {todos} = this.state
-        // 遍历每个todo，比较id。如果id与要修改的id相同，则修改其done值
-        const newTodos = todos.map(todoObj => {
-            if (todoObj.id === id) {
-                return {...todoObj, done: done}
-            } else return todoObj
-        })
-        // 更新state
-        this.setState({todos: newTodos})
-    }
+        // 客户端在3000端口发送ajax请求给服务端的8848端口
+        // ajax成功发送给服务端。服务端响应后，客户端同源策略发现不在一个端口
+        // 客户端拦截了服务端的响应数据，导致不能接收数据
 
-    // 删除TODO
-    deleteTodo = (id) => {
-        const {todos} = this.state
-        const newTodos = todos.filter(todoObj => todoObj.id !== id)
-        this.setState({todos: newTodos})
-    }
+        // 如何解决：
+        // 1.在package.json中配置【proxy: 代理地址】解决跨域
+        // 代理端口与客户端发送请求的端口要一致【get里请求的是代理地址】
+        // 通过代理，向服务端发送ajax请求【代理的proxy里是真正请求的地址】
+        // 同源策略：【两个 URL 的协议 (protocol)、主机 (host) 和端口 (port) 都必须相同，才能被视为同源。如果不同源，浏览器就会阻止它们之间的通信。
+        // 跨域问题本质是浏览器拒绝了自己的请求。因为服务器之间没有同源策略，所以会正常收发数据
+        // 需要注意的是：该方法只能是3000端口找不到的资源才会找代理【3000端口优先级比8848大】，且代理不能绑定多个代理
 
-    // 批量删除
-    deleteCheckedTodo = () => {
-        const {todos} = this.state
-        const newTodos = todos.filter(todoObj => todoObj.done !== true)
-        this.setState({todos: newTodos})
-    }
+        // 2.在src下新建setupProxy.js
 
-    // 批量勾选
-    batchCheck = (checked) => {
-        const {todos} = this.state
-        const newTodos = todos.map(todoObj => {
-            return {...todoObj, done: checked}
-        })
+        // 3.SpringBoot注解：@CrossOrigin(origins = "http://localhost:3000")
+        // 这里使用的是方法3
+        axios.get('http://localhost:8848/api/1/student').then(
+            response => {// 成功的回调
 
-        this.setState({todos: newTodos})
-    }
+                let str = ""
+                response.data.forEach(stu => {
+                    str = str + JSON.stringify(stu)
+                })
+                this.setState({stuData: str})
+            },
+            error => {// 失败的回调
+                console.log('失败', error)
+            }
+        )
+    };
 
     render() {
-        const {todos} = this.state
         return (
-            <div className="todo-container">
-                <div className="todo-wrap">
-                    <Header addTodo={this.addTodo}/>
-                    <List todos={todos} updateTodo={this.updateTodo} deleteTodo={this.deleteTodo}/>
-                    <Footer todos={this.state.todos} deleteCheckedTodo={this.deleteCheckedTodo}
-                            batchCheck={this.batchCheck}/>
+            <div>
+                <button onClick={this.getStudentData}>点我获取数据</button>
+                <div>
+                    {this.state.stuData}
                 </div>
             </div>
-        )
+        );
     }
 }
+
+export default App;
