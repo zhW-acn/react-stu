@@ -29,7 +29,7 @@
                 <div>
                     <input ref="i1" type="text"/>已弃用的string的ref
                     <button onClick={this.showData}>点击展示左侧输入框内容</button>
-                    <input ref={currentNode => this.i2 = currentNode} onBlur={this.showData2} type="text"/>使用箭头函数
+                    <input ref={currentNode => this.i2 = currentNode} onBlur={this.showData2} type="text"/>使用箭头函数，相当于标记这个节点为i2。就可以在这个组件的this里使用了
                 </div>
             )
         }
