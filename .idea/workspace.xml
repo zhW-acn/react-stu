@@ -5,21 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e97cf2d-143d-460e-ae3b-4b4768051960" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/09.hooks/src/App_useEffect.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09.hooks/src/App_useRef.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09.hooks/src/App_useState.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09.hooks/src/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10.红黄蓝小案例/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10.红黄蓝小案例/src/components/MyButton/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10.红黄蓝小案例/src/components/MyDiv/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10.红黄蓝小案例/src/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Content/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Content/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchResult/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SidebarItem/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SidebarItem/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/MySearch.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Photo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/StudentInfo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.面向组件/04.组件的三个核心属性-state.html" beforeDir="false" afterPath="$PROJECT_DIR$/02.面向组件/04.组件的三个核心属性-state.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03.脚手架文件/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/03.脚手架文件/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03.脚手架文件/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/03.脚手架文件/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="JSX File" />
       </list>
     </option>
@@ -53,25 +54,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "React Native.Unnamed.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "F:/GitHub/react-stu/public",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.start.executor": "Run",
-    "settings.editor.selected.configurable": "inlay.hints",
-    "ts.external.directory.path": "C:\\Users\\22408\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\233.13135.92\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;React Native.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/GitHub/react-stu/public&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\22408\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\233.13135.92\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\GitHub\react-stu\public" />
@@ -81,11 +82,11 @@
       <recent name="F:\GitHub\react-stu\src\components\Header" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\GitHub\react-stu\src" />
       <recent name="F:\GitHub\react-stu\10.红黄蓝小案例" />
+      <recent name="F:\GitHub\react-stu" />
       <recent name="F:\GitHub\react-stu\09.hooks" />
       <recent name="F:\GitHub\react-stu\08.Router" />
-      <recent name="F:\GitHub\react-stu\src\pages" />
-      <recent name="F:\GitHub\react-stu" />
     </key>
   </component>
   <component name="RunManager">
@@ -123,7 +124,8 @@
       <workItem from="1708674083976" duration="916000" />
       <workItem from="1708683839513" duration="30117000" />
       <workItem from="1708953503720" duration="54000" />
-      <workItem from="1708999227928" duration="16270000" />
+      <workItem from="1708999227928" duration="16516000" />
+      <workItem from="1709028706047" duration="13711000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -189,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708759513885</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update">
+      <option name="closed" value="true" />
+      <created>1709025651002</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709025651002</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
