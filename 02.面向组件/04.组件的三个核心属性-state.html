@@ -40,10 +40,13 @@
         }
         */
 
-
+        // setState(stateChange, [callback])
+        // 第二个参数为回调函数。
+        // setState函数调用是异步的：状态更新和render调用不是及时的
+        // 为了可以在setState的时候立即使用状态，传入第二个回调函数。这个回调函数里的状态才是最新的
         // 简化
         state = {isSummer: true} // 初始化状态
-        change = ()=>{ // 自定义方法：使用赋值语句将箭头函数赋值，就无需绑定this指向。箭头函数在外层寻找this指向
+        change = () =>{ // 自定义方法：使用赋值语句将箭头函数赋值，就无需绑定this指向。箭头函数在外层寻找this指向
             this.setState({isSummer:!this.state.isSummer})
         }
         render() {

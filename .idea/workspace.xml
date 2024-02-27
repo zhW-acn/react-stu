@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e97cf2d-143d-460e-ae3b-4b4768051960" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09.hooks/src/App_useEffect.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09.hooks/src/App_useRef.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09.hooks/src/App_useState.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09.hooks/src/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.红黄蓝小案例/src/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.红黄蓝小案例/src/components/MyButton/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.红黄蓝小案例/src/components/MyDiv/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.红黄蓝小案例/src/index.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/前端路由原理.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/About.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.面向组件/04.组件的三个核心属性-state.html" beforeDir="false" afterPath="$PROJECT_DIR$/02.面向组件/04.组件的三个核心属性-state.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03.脚手架文件/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/03.脚手架文件/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03.脚手架文件/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/03.脚手架文件/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -26,6 +31,7 @@
       <list>
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="JSX File" />
       </list>
     </option>
@@ -61,7 +67,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.start.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.externalDependencies",
+    "settings.editor.selected.configurable": "inlay.hints",
     "ts.external.directory.path": "C:\\Users\\22408\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\233.13135.92\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -75,11 +81,11 @@
       <recent name="F:\GitHub\react-stu\src\components\Header" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\GitHub\react-stu\10.红黄蓝小案例" />
+      <recent name="F:\GitHub\react-stu\09.hooks" />
+      <recent name="F:\GitHub\react-stu\08.Router" />
       <recent name="F:\GitHub\react-stu\src\pages" />
       <recent name="F:\GitHub\react-stu" />
-      <recent name="F:\GitHub\react-stu\07.GitHub用户搜索小案例" />
-      <recent name="F:\GitHub\react-stu\06.axios与跨域" />
-      <recent name="F:\GitHub\react-stu\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -115,7 +121,9 @@
       <workItem from="1708606279333" duration="1310000" />
       <workItem from="1708647139771" duration="21209000" />
       <workItem from="1708674083976" duration="916000" />
-      <workItem from="1708683839513" duration="29845000" />
+      <workItem from="1708683839513" duration="30117000" />
+      <workItem from="1708953503720" duration="54000" />
+      <workItem from="1708999227928" duration="16270000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -165,7 +173,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708742063447</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update">
+      <option name="closed" value="true" />
+      <created>1708759390476</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708759390476</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update">
+      <option name="closed" value="true" />
+      <created>1708759513885</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708759513885</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
