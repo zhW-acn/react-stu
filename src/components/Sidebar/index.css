@@ -4,12 +4,12 @@
     padding: 20px;
     box-sizing: border-box;
 }
-ul {
+.side-ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* 设置子项等间距分布 */
-    height: 70%; /* 让 ul 元素占据父容器的高度 */
+    height: 100%; /* 让 ul 元素占据父容器的高度 */
 }

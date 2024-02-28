@@ -9,7 +9,7 @@ class Sidebar extends Component {
         const {items, itemPoint,updateItemPoint} = this.props
         return (
             <div className="sidebar">
-                <ul>
+                <ul className="side-ul">
                     {/*这里用map遍历*/}
                     {
                         items.map(item => {

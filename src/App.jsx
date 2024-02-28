@@ -29,7 +29,8 @@ class App extends Component {
                 {itemName: '照片墙', itemUri: '/photo', itemPage: <Photo/>},
                 {itemName: '学生信息', itemUri: '/studentInfo', itemPage: <StudentInfo/>}
             ],
-            itemPoint: ''
+            itemPoint: '',
+            currentStu:{id: -1}// 当前学生的信息，只需要学生id，-1表示没有选择任何学生
         };
         this.state.itemPoint = this.state.items[0].itemName; // 初始化当前导航栏指向
     }
