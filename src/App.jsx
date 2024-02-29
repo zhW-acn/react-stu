@@ -29,15 +29,28 @@ class App extends Component {
                 {itemName: '照片墙', itemUri: '/photo', itemPage: <Photo updateItemPoint={this.updateItemPoint}/>},
                 {itemName: '学生信息', itemUri: '/studentInfo', itemPage: <StudentInfo/>}
             ],
-            itemPoint: '',
-            currentStu:{id: -1}// 当前学生的信息，只需要学生id，-1表示没有选择任何学生
+            itemPoint: '首页'
         };
-        this.state.itemPoint = this.state.items[0].itemName; // 初始化当前导航栏指向
+        // this.state.itemPoint = this.state.items[0].itemName; // 初始化当前导航栏指向
     }
 
     // 更新指向
     updateItemPoint = (name) => {
         this.setState({itemPoint: name})
+    }
+
+
+    componentDidMount() {
+        if (performance.navigation.type === 1) {
+            // 如果是从缓存加载的页面，则不执行状态更新操作`
+            console.log('页面是从缓存加载的，执行状态更新操作');
+            this.setState({itemPoint: this.state.itemPoint})
+            window.location.href = 'http://localhost:3000/home'
+        } else {
+            // 执行其他初始化操作，例如状态更新等
+            console.log('页面是重新加载的，执行状态更新操作');
+            this.setState({itemPoint: "首页"})
+        }
     }
 
     render() {
