@@ -1,28 +1,52 @@
 import React, {Component} from 'react';
-import {Route, Routes} from "react-router-dom";
+import axios from 'axios'
 
 class StudentInfo extends Component {
 
-    render() {
-        debugger
-        return (
-            <div>
-                <h2>学生信息</h2>
-                {/*没必要遍历所有，App传值就行*/}
-                <Routes>
-                    <Route path="/studentInfo" element={<Student/>}>
-                    </Route>
-                </Routes>
-            </div>
-        );
+    state = { // 学生状态，传递给student
+        stuId: window.location.href.split("http://localhost:3000/studentInfo/?stuid=")[1],
+        student: {
+            age: '',
+            avatar: '',
+            id: '',
+            name: ''
+        },
+        isFirst: true
     }
-}
 
-class Student extends Component{
+    // axios
+    getStu = () => {
+        const {stuId} = this.state
+        axios.get('http://localhost:8848/stu/?id=' + stuId).then(
+            response => {
+                this.setState({student: response.data})
+                this.setState({isFirst: false})
+            },
+            error => {
+                if (this.state.isFirst) {
+                    return
+                }
+                alert('获取数据失败' + error.message)
+            }
+        )
+    }
+
     render() {
+        this.getStu();
+        const {student, isFirst} = this.state
         return (
             <div>
-                <h2>这里是学生信息</h2>
+                {
+                    isFirst ? <h2>请点击照片墙的学生照片以查询该学生信息</h2> :
+                        <div>
+                            <h2>学生信息</h2>
+                            <h2>name: {student.name}</h2>
+                            <h2>age: {student.age}</h2>
+                            <h2>id: {student.id}</h2>
+                            <h2>avatar: {student.avatar}</h2>
+                        </div>
+                }
+
             </div>
         );
     }

@@ -8,3 +8,14 @@ a {
     outline: none;	/* 去除旧版浏览器的点击后的外虚线框 */
     color: #000;	/* 去除默认的颜色和点击后变化的颜色 */
 }
+
+.photo-ul {
+    list-style: none;
+}
+.photo-li {
+    float: left;
+    width: 30%;
+    padding: .75rem;
+    border: 1px solid #efefef;
+    text-align: center;
+}

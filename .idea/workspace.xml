@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e97cf2d-143d-460e-ae3b-4b4768051960" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/pages/Photo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchResult/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchResult/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SidebarItem/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PhotoItem/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MySearch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MySearch.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Photo.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Photo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Photo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/StudentInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/StudentInfo.jsx" afterDir="false" />
     </list>
@@ -50,25 +44,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;React Native.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/GitHub/react-stu/public&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\22408\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\233.13135.92\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "React Native.Unnamed.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "F:/GitHub/react-stu",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "settings.editor.selected.configurable": "inlay.hints",
+    "ts.external.directory.path": "C:\\Users\\22408\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\233.13135.92\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\GitHub\react-stu\public" />
@@ -121,7 +115,9 @@
       <workItem from="1708683839513" duration="30117000" />
       <workItem from="1708953503720" duration="54000" />
       <workItem from="1708999227928" duration="16516000" />
-      <workItem from="1709028706047" duration="36813000" />
+      <workItem from="1709028706047" duration="37069000" />
+      <workItem from="1709173305551" duration="31000" />
+      <workItem from="1709173357569" duration="8684000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -203,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709060444969</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update">
+      <option name="closed" value="true" />
+      <created>1709115881048</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709115881048</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

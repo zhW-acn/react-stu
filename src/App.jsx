@@ -26,7 +26,7 @@ class App extends Component {
             items: [// 关于导航栏的信息
                 {itemName: '首页', itemUri: '/home', itemPage: <Home/>},
                 {itemName: '信息搜索', itemUri: '/search', itemPage: <MySearch/>},
-                {itemName: '照片墙', itemUri: '/photo', itemPage: <Photo/>},
+                {itemName: '照片墙', itemUri: '/photo', itemPage: <Photo updateItemPoint={this.updateItemPoint}/>},
                 {itemName: '学生信息', itemUri: '/studentInfo', itemPage: <StudentInfo/>}
             ],
             itemPoint: '',

@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import PhotoItem from "../components/PhotoItem";
 import axios from "axios";
 import {NavLink} from "react-router-dom";
-import './Photo.css'
 
 class Photo extends Component {
 
@@ -37,6 +36,10 @@ class Photo extends Component {
         this.getData();
     }
 
+    handleClick = () =>{
+        const {updateItemPoint} = this.props
+        updateItemPoint("学生信息")
+    }
 
     render() {
         return (
@@ -48,9 +51,9 @@ class Photo extends Component {
                             (item) => {
                                 return (
                                     /*点击跳转到学生信息*/
-                                    <li key={item.url} className="photo-li">
-                                        <NavLink to={`/studentInfo/?u=${item.id}`}>
-                                            <PhotoItem item={item}/>
+                                    <li key={item.url} className="photo-li" onClick={this.handleClick}>
+                                        <NavLink to={`/studentInfo/?stuid=${item.id}`}>
+                                            <PhotoItem item={item} />
                                         </NavLink>
                                     </li>
                                 )
